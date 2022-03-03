@@ -1,0 +1,399 @@
+body {
+  background: #E5E5E5;
+  background: #fff;
+}
+
+.cent {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+header {
+  height: 740px;
+  text-align: center;
+  padding-top: 30px;
+  background-image: url("../assets/Rectangle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header h1 {
+  margin-top: 192px;
+  color: #fff;
+}
+header strong {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  display: block;
+  font-size: 64px;
+  line-height: 94.85px;
+  letter-spacing: 0.02em;
+}
+header span {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.icons .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.time-block {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 170px;
+  background: #fff;
+}
+.time-block .time-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 57px;
+}
+.time-block .time-block-number {
+  font-size: 72px;
+  color: #F7654A;
+}
+.time-block .time-block-age {
+  font-size: 36px;
+  padding-top: 25px;
+}
+.time-block .time-block-word {
+  font-size: 18px;
+  color: #999999;
+  padding-top: 10px;
+}
+
+main {
+  text-align: center;
+  min-height: 1000px;
+}
+main h2 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+main .big-projects {
+  font-size: 36px;
+  color: #404149;
+  margin-top: 250px;
+}
+main .card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+  text-align: left;
+}
+main .card-info .card h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #404149;
+  margin-top: 15px;
+}
+main .card-info .card .rectangle-1 {
+  width: 55px;
+  height: 6px;
+  background: #F7654A;
+  margin-top: 45px;
+}
+main .card-info .card p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #999;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+main .orange-line {
+  width: 100%;
+  height: 181px;
+  background: #F7654A;
+  margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .orange-line .info-line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .orange-line .info-line .info-line-text {
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+main .orange-line .info-line .info-line-text .over-brain {
+  font-size: 48px;
+}
+main .orange-line .info-line a {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+}
+main .orange-line .info-line .info-line-white {
+  background: #fff;
+  width: 175px;
+  height: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .orange-line .info-line .info-line-white .mail {
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 18px;
+  letter-spacing: 5%;
+}
+
+.factory {
+  margin-top: 150px;
+}
+.factory h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.factory .factory-card {
+  margin-top: 66px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.factory .factory-card .fcard img {
+  padding: 59px 145px 0px 145px;
+}
+.factory .factory-card .fcard h4 {
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  padding-bottom: 59px;
+}
+
+.cool-image {
+  width: 100%;
+  height: 814px;
+  margin-top: 150px;
+  background: url("../assets/Rectangle 3.1.png");
+}
+
+.answers-list {
+  font-family: "Oswald",sans-serif;
+  font-weight: 500;
+  margin: 150px 0px;
+}
+.answers-list h2 {
+  font-size: 36px;
+}
+.answers-list h3 {
+  font-size: 24px;
+  color: #F7654A;
+  text-transform: uppercase;
+}
+.answers-list p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #999999;
+}
+.answers-list .list {
+  text-align: left;
+  line-height: 1.5;
+}
+.answers-list .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 3;
+}
+.answers-list .h3-list {
+  padding-left: 5px;
+}
+
+.p-list {
+  padding-left: 15px;
+}
+
+.dark-part {
+  width: 100%;
+  height: 364px;
+  background: #404149;
+}
+.dark-part .part {
+  padding-top: 100px;
+}
+.dark-part h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  color: #fff;
+}
+
+.part-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 60px;
+}
+
+.reviews {
+  margin: 150px 0px;
+}
+.reviews h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.reviews-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 64px;
+}
+.reviews-items .review-item {
+  text-align: left;
+}
+.reviews-items .review-item p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 10px 30px 38px 30px;
+  color: gray;
+}
+
+.firm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 30px;
+}
+.firm h4 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  color: #000;
+}
+.firm h4 span {
+  color: #f7654a;
+}
+
+.contacts {
+  text-align: center;
+  margin: 150px 0px;
+}
+.contacts h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+}
+.contacts h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+}
+
+.contacts-items {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-name {
+  color: gray;
+  font-size: 24px;
+  padding: 36px 0px 25px 0px;
+}
+
+.mail-contact {
+  color: #f7654a;
+}
+
+.developer-main {
+  width: 100%;
+  height: 82px;
+  background: #404149;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.developer-main p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+}
+
+.developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
