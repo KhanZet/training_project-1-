@@ -84,3 +84,4 @@ console.log(getObjectArray(item));
 // 	console.log(item.children[i].className == item.children[i+1].className);
 // }
 // + `(${i+1})`
+// HEHEHE HIHIHI
