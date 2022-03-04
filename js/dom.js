@@ -38,31 +38,41 @@
 
 // ------------------------------------------------------------------------------------
 
+// main function
+// Тут создается главный объект, также начальная точка, вызывается вторая функцию и возращается объект
 function getObjectArray(item) {
 	let itemObject = Object();
 	let itemName = item;
 	getObjectArrayCur(itemName, itemObject);
 	return itemObject;
 }
+// recursive function
+// Это рекурсивная функцию, которая выполняет всю работу
 function getObjectArrayCur (item, objArray) {
+	// Создаются объект, точка отправки, дети точки
 	let itemObject = objArray;
 	let itemName = item;
 	let itemChildrens = itemName.children;
-	
+	// начинается общий пересчет массива детей
 	for(let i = 0, length = itemChildrens.length; i < length; i++){
+		// создаются переменные с названием объекта
 		let localTempName = itemChildrens[i].localName;
 		let classTempName = itemChildrens[i].className;
-
+		//идет проверка на присутствие детей у нынешнего объекта
 		if (itemChildrens[i].children.length !== 0) {
-			
+			//Если детей нету, то идет проверка на то, присвоен ли объекту класс, что бы дать название
 			if (itemChildrens[i].classTempName == false) {
+				//Если класса нету, название объекта выдается по тегу
 				itemObject[localTempName] = new Object();
+				//Сверху создается пустой объект, а снизу с ним вызывается рекурсивная функция
 				getObjectArrayCur(itemChildrens[i], itemObject[localTempName]);
 				continue;
 			}
+			//Если класс есть выдается название по нему
 			itemObject[classTempName] = new Object();
 			getObjectArrayCur(itemChildrens[i], itemObject[classTempName]);
-		}else {
+		}else {//Тут идет случай, если у объекта нету детей
+			// в случае если нету детей, объект просто присваевается из детей
 			if(itemChildrens[i].className == false) {
 				itemObject[localTempName] = itemChildrens[i];
 				continue;
@@ -72,7 +82,9 @@ function getObjectArrayCur (item, objArray) {
 		
 	}
 }
+// Инициализация начальной точки
 let item = document.querySelector('body');
+//Вызов главной функции
 console.log(getObjectArray(item));
 
 // ------------------------------------------------------------------------------------
