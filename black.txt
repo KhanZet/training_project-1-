@@ -1,9 +1,0 @@
-<div class="info-line-words">
-							<span>САМЫЕ УМНЫЕ ПРОЕКТЫ</span>
-							<br>
-							<span>РЕАЛИЗУЕМ САМЫЕ СМЕЛЫЕ РЕШЕНИЯ В РОССИИ!</span>
-						</div>
-						<div class="white-block">
-							<span>&#9993;</span>
-							<span>ВАШ ЗАПРОС</span>
-						</div>

@@ -48,16 +48,14 @@ function getObjectArrayCur (item, objArray) {
 	let itemObject = objArray;
 	let itemName = item;
 	let itemChildrens = itemName.children;
+	
 	for(let i = 0, length = itemChildrens.length; i < length; i++){
 		let localTempName = itemChildrens[i].localName;
 		let classTempName = itemChildrens[i].className;
-		if (itemChildrens[i] == itemChildrens[i+1]) {
-			localTempName = localTempName + `(${i+1})`;
-			classTempName = classTempName + `(${i+1})`;
-		}
+
 		if (itemChildrens[i].children.length !== 0) {
 			
-			if (classTempName == false) {
+			if (itemChildrens[i].classTempName == false) {
 				itemObject[localTempName] = new Object();
 				getObjectArrayCur(itemChildrens[i], itemObject[localTempName]);
 				continue;
@@ -66,11 +64,12 @@ function getObjectArrayCur (item, objArray) {
 			getObjectArrayCur(itemChildrens[i], itemObject[classTempName]);
 		}else {
 			if(itemChildrens[i].className == false) {
-				itemObject[itemChildrens[i].localName] = itemChildrens[i];
+				itemObject[localTempName] = itemChildrens[i];
 				continue;
 			}
-			itemObject[itemChildrens[i].className] = itemChildrens[i];
+			itemObject[classTempName] = itemChildrens[i];
 		}
+		
 	}
 }
 let item = document.querySelector('body');
@@ -85,3 +84,4 @@ console.log(getObjectArray(item));
 // }
 // + `(${i+1})`
 // HEHEHE HIHIHI
+//tem.split('(')[1].split(')')[0]
